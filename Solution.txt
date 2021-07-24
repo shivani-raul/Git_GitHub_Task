@@ -1,0 +1,68 @@
+Git-Github Task---Solution
+
+mkdir gitgithub-task
+cd gitgithub-task/
+git init
+ls
+ls -a
+
+notepad file1-dev
+notepad file2-test
+notepad file3-test
+
+notepad .gitignore
+git add .gitignore
+git commit -m "Initial commit"
+
+git branch Dev
+git branch Test
+
+git checkout Dev
+git add file1-dev.txt
+git commit -m "file1-dev added to branch Dev"
+git status
+
+git checkout Test
+git add .
+git status
+git commit -m "added file2-test and file3-test both together with ."
+git log
+
+git checkout Dev
+notepad file1-dev.txt
+git status
+git diff
+notepad file1-dev.txt
+git add file1-dev.txt
+git status
+git diff --cached
+git commit -m "modified file1-dev successfully"
+
+git checkout master
+git merge Dev
+git merge Test
+
+git remote add origin https://github.com/shivani-raul/gitgithub-task.git
+git remote -v
+git push -u origin master
+git status
+git log 
+
+$ git clone https://github.com/shivani-raul/Git_GitHub_Task.git
+---------------------------------------
+Cloning into 'Git_GitHub_Task'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 15 (delta 4), reused 15 (delta 4), pack-reused 0
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (4/4), done.
+---------------------------------------
+
+$ cd gitgithub-task
+
+$ notepad Solution.txt
+
+
+
+
